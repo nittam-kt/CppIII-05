@@ -53,8 +53,6 @@ void Update();
 void Render();
 void RenderUI();
 
-
-
 class Enemy
 {
     float x;
@@ -64,8 +62,17 @@ class Enemy
 
 class Slime : public Enemy
 {
+public:
+    DirectX::XMFLOAT3 Pos;
     int life;
     void update() override{}
+};
+
+
+class Player
+{
+public:
+    int life;
 };
 
 
